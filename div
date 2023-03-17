@@ -1,0 +1,42 @@
+//versão: 1.0(sem atualização)
+//copyright 12904738947
+//data de criação: 16/03/2023(21:01)
+//objetivo do codigo: para verificar se um numero é par ou impar
+
+package div;//importação da biblioteca java.lang 
+
+import java.util.Scanner;
+
+public class program {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);//estanciamento do scanner e criando o scanner(sc)
+		System.out.println("Digite o primeiro número: ");//mensagem para o usuario
+		int num = sc.nextInt();//criação da variavel do tipo inteiro (num) 
+		System.out.println("Digite o segundo número: ");//mensagem para o usuario
+		int num2 = sc.nextInt();//criação da variavel do tipo inteiro (num2) 
+		System.out.println("Digite o terceiro número: ");//mensagem para o usuario
+		int num3 = sc.nextInt();//criação da variavel do tipo inteiro (num3) 
+		//identificação de numeros pares e impares(imc)
+		if((num % 2 == 0)) {//inicio da condição if(estrutura condicional que verifica a veracidade da variavel num(do tipo inteiro) e se é um numero par)
+			System.out.println("O Primeiro Número é par");//mensagem para o usuario
+		}
+		else{//se a condição acima não for verdadeira entra nesse bloco
+			System.out.println("O Primeiro Número é impar");//mensagem para o usuario
+		}
+		if((num2 % 2 == 0)) {//inicio da condição if(estrutura condicional que verifica a veracidade da variavel num(do tipo inteiro) e se é um numero par)
+			System.out.println("O Segundo Número é par");//mensagem para o usuario confirmando que o numero é par
+		}
+		else{//se a condição acima não for verdadeira entra nesse bloco
+			System.out.println("O Segundo Número é impar");//mensagem para o usuario confirmando que o numero é impar
+		}
+		if((num3 % 2 == 0)) {//inicio da condição if(estrutura condicional que verifica a veracidade da variavel num(do tipo inteiro) e se é um numero par)
+			System.out.println("O Terceiro Número é par");//mensagem para o usuario confirmando que o numero é par
+		}
+		else{//se a condição acima não for verdadeira entra nesse bloco
+			System.out.println("O Terceiro Número é impar");//mensagem para o usuario confirmando que o numero é impar
+		}
+		}
+	}
+}
+

@@ -1,0 +1,27 @@
+package triangulo;
+
+import java.util.Scanner;
+
+public class program {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Digite o lado A do triangulo: ");
+		int a = sc.nextInt();
+		System.out.println("Digite o lado B do triangulo: ");
+		int b = sc.nextInt();
+		System.out.println("Digite o lado C do triangulo: ");
+		int c = sc.nextInt();
+		//identificação de tipos de triangulos
+		if(a == b && b==c) {
+			System.out.println("Triangulo equilatero");
+		}
+		else if(a == b && b != c) {
+			System.out.println("Triangulo isosceles");
+		}
+		else {
+			System.out.println("Triangulo escaleno");
+		}
+	}
+
+}
